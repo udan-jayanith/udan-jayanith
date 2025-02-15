@@ -16,7 +16,3 @@
 <h2>⚡️ Where to find me</h2>
 <p><a target="_blank" href="https://twitter.com/UdanJayanith" style="display: inline-block;"><img src="https://img.shields.io/badge/twitter-x?style=for-the-badge&logo=x&logoColor=white&color=%230f1419" alt="twitter" /></a>
 <a target="_blank" href="https://stackoverflow.com/users/23336104" style="display: inline-block;"><img src="https://img.shields.io/badge/stackoverflow-logo?style=for-the-badge&logo=stackoverflow&logoColor=white&color=%23cc0000" alt="stackoverflow" /></a></p>
-<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=Udan Jayanith&show_icons=true&locale=en" alt="Udan Jayanith" /></p>
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=Udan Jayanith&" alt="Udan Jayanith" /></p>
-<p><img src="https://github-readme-stats.vercel.app/api/top-langs?username=Udan Jayanith&show_icons=true&locale=en&layout=compact" alt="Udan Jayanith" /></p>
-<p><a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Udan Jayanith" alt="Udan Jayanith" /></a></p>
