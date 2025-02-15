@@ -3,6 +3,7 @@
 ###
 
 <div align="left">
+  <h4>My tech stack</h4>
   <img src="https://skillicons.dev/icons?i=js" height="40" alt="javascript logo"  />
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=go" height="40" alt="go logo"  />
