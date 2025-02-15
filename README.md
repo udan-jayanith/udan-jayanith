@@ -20,4 +20,3 @@
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=Udan Jayanith&" alt="Udan Jayanith" /></p>
 <p><img src="https://github-readme-stats.vercel.app/api/top-langs?username=Udan Jayanith&show_icons=true&locale=en&layout=compact" alt="Udan Jayanith" /></p>
 <p><a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Udan Jayanith" alt="Udan Jayanith" /></a></p>
-<script>console.log("Hello world")</script>
