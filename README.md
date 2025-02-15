@@ -1,4 +1,3 @@
-<h4 align="left">A full-stack developer</h4>
 
 ###
 
