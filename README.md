@@ -13,5 +13,5 @@ I enjoy problem-solving through code. I approach each project with attention to 
 ## 💡 My Approach
 I believe in the power of simplicity and elegance in code. Every line I write is an opportunity to create something meaningful, whether it's solving a complex algorithm or designing an intuitive user interface. I'm particularly drawn to projects that challenge conventional approaches and push the boundaries of what's possible with fundamental technologies.
 
---
-Writen by Claude AI.
+---
+*Written by Claude AI.*
