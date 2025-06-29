@@ -1,5 +1,3 @@
-💻 **Code Craftsman & Digital Creator**
-
 I'm a passionate developer who focuses on creating clean, functional software that provides great user experiences. My programming journey is driven by curiosity and a commitment to writing maintainable code that solves real problems.
 
 ## 🎯 What Drives Me
