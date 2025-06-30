@@ -1,7 +1,7 @@
 <div align="left">
   <h2 class="f4 mb-2 text-normal">My tech stack</h2>
   <img src="https://skillicons.dev/icons?i=vue" height="40" alt="angularjs logo"  />
-   <img width="12" />
+  <img width="12" style="background-color: red;"/>
   <img src="https://skillicons.dev/icons?i=go" height="40" alt="go logo"  />
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=js" height="40" alt="javascript logo"  />
