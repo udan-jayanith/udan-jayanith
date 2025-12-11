@@ -64,5 +64,4 @@ onMounted(() => {
 		display: none;
 	}
 }
-
 </style>

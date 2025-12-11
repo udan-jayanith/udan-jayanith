@@ -1,13 +1,26 @@
 <script setup>
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faStar);
+
 let props = defineProps({
 	repo: Object,
 });
+
 </script>
 
 <template>
 	<div class="repo-box">
-		<h5>
-			<a :href="`https://github.com/udan-jayanith/${props.repo.name}`">{{ props.repo.name ? props.repo.name : "" }}</a>
+		<h5 class="header">
+			<a :href="`https://github.com/udan-jayanith/${props.repo.name}`">{{
+				props.repo.name ? props.repo.name : ""
+			}}</a>
+			<div class="star-count-container">
+				<FontAwesomeIcon :icon="faStar" class="start-icon" />
+				<div class="star-count">{{ props.repo.stars ? props.repo.stars : "" }}</div>
+			</div>
 		</h5>
 		<p class="description">
 			{{ props.repo.description ? props.repo.description : "" }}
@@ -49,6 +62,33 @@ let props = defineProps({
 		a {
 			text-decoration: none;
 			color: steelblue;
+		}
+	}
+
+	.header {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		width: 100%;
+		.star-count-container {
+			margin-left: auto;
+			font-size: 1rem;
+			padding-right: 2px;
+
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+			gap: 4px;
+
+			.start-icon {
+				color: #ffd355;
+				&hover {
+					text-shadow: var(--box-shadow);
+					box-shadow: var(--box-shadow);
+				}
+			}
 		}
 	}
 
