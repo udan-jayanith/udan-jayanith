@@ -1,0 +1,54 @@
+:root {
+	--black: #303233;
+	--white: #fffef0;
+	--border: 2px solid var(--black);
+	--box-shadow: 1px 2px 4px #f1e8cb;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+
+	background: var(--white);
+	filter: url(https://texashistory.unt.edu/ark:/67531/metadc916020/m1/1/med_res);
+	font-family: "Balthazar", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.2rem;
+	max-width: 100%;
+	box-sizing: border-box;
+
+	color: var(--black);
+}
+
+@media (orientation: portrait) {
+	body {
+		padding: auto;
+		margin: auto;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Merriweather", serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: 600;
+	font-variation-settings: "wdth" 100;
+}
+
+hr {
+	border: none; /* Removes default border/shading */
+	height: 2px; /* Sets the thickness of the line */
+	background: var(--black); /* Sets the color */
+	margin: 20px auto; /* Centers the line with top/bottom margin */
+}
+
+div,
+hr {
+	border-radius: 2px;
+}
