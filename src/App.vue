@@ -3,12 +3,20 @@ import AboutMe from './components/AboutMe/AboutMe.vue';
 import ProjectSelection from './components/ProjectsSection/ProjectSelection.vue';
 import { onMounted, ref } from 'vue';
 
-let spritePos = ref({x:0, y:0})
 let scrollY = 0
+let spriteEl = ref(null)
+
+function updateSpritePos({x, y}){
+	if (spriteEl.value == null){
+		return
+	}
+	 spriteEl.value.style.left = x+'px'
+	 spriteEl.value.style.top = y-26+scrollY+'px'
+}
 
 onMounted(() => {
   window.addEventListener('mousemove', (event)=>{
-  	spritePos.value = {x:event.x, y:event.y-26+scrollY}
+ 	updateSpritePos(event)
   });
 
   window.addEventListener('scroll', ()=>{
@@ -19,7 +27,7 @@ onMounted(() => {
 
 <template>
 	<main class="main-body">
-		<img src="./assest//cat.gif" class="sprite" :style="{top:spritePos.y+'px', left:spritePos.x+'px'}"></img>
+		<img src="./assest//cat.gif" class="sprite" ref="spriteEl"></img>
 		<AboutMe></AboutMe>
 		<hr />
 		<h2>Projects</h2>
