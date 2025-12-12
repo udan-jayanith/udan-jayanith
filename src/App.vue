@@ -10,8 +10,8 @@ function updateSpritePos({x, y}){
 	if (spriteEl.value == null){
 		return
 	}
-	 spriteEl.value.style.left = x+'px'
-	 spriteEl.value.style.top = y-26+scrollY+'px'
+	 spriteEl.value.style.left = x+10+'px'
+	 spriteEl.value.style.top = (y+scrollY)-16+'px'
 }
 
 onMounted(() => {
@@ -27,7 +27,7 @@ onMounted(() => {
 
 <template>
 	<main class="main-body">
-		<img src="./assest//cat.gif" class="sprite" ref="spriteEl"></img>
+		<img src="./assest/dancing-gopher.gif" class="sprite" ref="spriteEl"></img>
 		<AboutMe></AboutMe>
 		<hr />
 		<h2>Projects</h2>
@@ -49,7 +49,7 @@ onMounted(() => {
 }
 
 .sprite{
-	width: 38px;
+	width: 26px;
 	position: absolute;
 	z-index: 99;
 	top: 0px;
