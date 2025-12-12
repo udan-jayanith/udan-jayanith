@@ -8,12 +8,11 @@ library.add(faStar);
 let props = defineProps({
 	repo: Object,
 });
-
 </script>
 
 <template>
 	<div class="repo-box">
-		<h5 class="header">
+		<div class="header">
 			<a :href="`https://github.com/udan-jayanith/${props.repo.name}`">{{
 				props.repo.name ? props.repo.name : ""
 			}}</a>
@@ -21,7 +20,7 @@ let props = defineProps({
 				<FontAwesomeIcon :icon="faStar" class="start-icon" />
 				<div class="star-count">{{ props.repo.stars ? props.repo.stars : "" }}</div>
 			</div>
-		</h5>
+		</div>
 		<p class="description">
 			{{ props.repo.description ? props.repo.description : "" }}
 		</p>
@@ -58,19 +57,25 @@ let props = defineProps({
 		margin: 0px;
 	}
 
-	h5 {
-		a {
-			text-decoration: none;
-			color: steelblue;
-		}
-	}
-
 	.header {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
 		width: 100%;
+
+		font-family: "Merriweather", serif;
+		font-optical-sizing: auto;
+		font-style: normal;
+		font-weight: 600;
+		font-variation-settings: "wdth" 100;
+		font-size: medium;
+
+		a {
+			text-decoration: none;
+			color: steelblue;
+		}
+
 		.star-count-container {
 			margin-left: auto;
 			font-size: 1rem;

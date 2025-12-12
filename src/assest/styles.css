@@ -10,7 +10,7 @@ body {
 	margin: 0px;
 
 	background: var(--white);
-	filter: url(https://texashistory.unt.edu/ark:/67531/metadc916020/m1/1/med_res);
+	filter: url("./filter.jpg");
 	font-family: "Balthazar", serif;
 	font-weight: 400;
 	font-style: normal;

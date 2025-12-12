@@ -27,7 +27,7 @@ onMounted(() => {
 
 <template>
 	<main class="main-body">
-		<img src="./assest/dancing-gopher.gif" class="sprite" ref="spriteEl"></img>
+		<img src="./assest/dancing-gopher.gif" class="sprite" ref="spriteEl" alt="dancing Gopher sprite"></img>
 		<AboutMe></AboutMe>
 		<hr />
 		<h2>Projects</h2>
