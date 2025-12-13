@@ -1,7 +1,10 @@
 <script setup>
-import AboutMe from './components/AboutMe/AboutMe.vue';
-import ProjectSelection from './components/ProjectsSection/ProjectSelection.vue';
 import { onMounted, ref } from 'vue';
+
+import AboutMe from './components/AboutMe/AboutMe.vue';
+import Nav from './components/Nav/Nav.vue';
+import ProjectSelection from './components/ProjectsSection/ProjectSelection.vue';
+import ExperienceSection from './components/ExperienceSection/ExperienceSection.vue';
 
 let scrollY = 0
 let spriteEl = ref(null)
@@ -29,9 +32,11 @@ onMounted(() => {
 	<main class="main-body">
 		<img src="./assest/dancing-gopher.gif" class="sprite" ref="spriteEl" alt="dancing Gopher sprite"></img>
 		<AboutMe></AboutMe>
-		<hr />
-		<h2>Projects</h2>
+		<Nav class="nav"></Nav>
+		<h2 id="projects">Projects</h2>
 		<ProjectSelection></ProjectSelection>
+		<h2 id="experience">Experience</h2>
+		<ExperienceSection></ExperienceSection>
 	</main>
 </template>
 
@@ -41,11 +46,15 @@ onMounted(() => {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 26px;
-	margin-bottom: 36px;
+	padding-bottom: 60px;
 	width: 50%;
 	min-height: 100vh;
 	max-width: 100%;
 	box-sizing: border-box;
+	
+	.nav{
+		margin-top: 2rem;
+	}
 }
 
 .sprite{

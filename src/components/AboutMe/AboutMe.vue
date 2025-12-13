@@ -30,7 +30,7 @@ onBeforeMount(async () => {
 		<div class="about-me">
 			<h1>Hey {{ profileData ? profileData.name : "" }} here.</h1>
 			<p>{{ profileData ? profileData.bio : "" }}</p>
-			<div class="social">
+			<div class="social" id="contact">
 				<div class="media">
 					<a :href="profileData ? profileData.html_url : '#'" title="Github"
 						><FontAwesomeIcon :icon="faGithub"
@@ -69,7 +69,9 @@ onBeforeMount(async () => {
 		align-items: flex-start;
 		justify-content: flex-start;
 		gap: 10px;
+		
 		height: 100%;
+		text-wrap-style: pretty;
 		p,
 		h1 {
 			text-wrap: pretty;
