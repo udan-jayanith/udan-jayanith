@@ -17,6 +17,7 @@ body {
 	font-size: 1.2rem;
 	max-width: 100%;
 	box-sizing: border-box;
+	overflow-x: hidden;
 
 	color: var(--black);
 }
