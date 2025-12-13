@@ -12,7 +12,7 @@
 			Developed parsers (HTTP and HLS), serializers (HTML, Quic, HTTP and HLS) and complex-algorithms
 			(querying) by my slef.
 		</li>
-		<li>Preficent in Go and Javascript and worked with Vue(For this site and other web apps).</li>
+		<li>Preficent in Go and Javascript and worked with Vue (For this site and other web apps).</li>
 		<li>
 			Worked with various databases (Bbolt, SQLite, MySQL, Firebase Firestore and Badger) and have
 			studied database internals.
