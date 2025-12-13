@@ -3,7 +3,7 @@
 <template>
 	<nav class="navigation-menu">
 		<a class="nav-item" href="#projects">Projects</a>
-		<a class="nav-item" href="#experience">Expirence</a>
+		<a class="nav-item" href="#experience">Experience</a>
 		<!--	<a class="nav-item" href="#">Education</a>-->
 
 		<a class="nav-item contact" href="#footer">Contact</a>
