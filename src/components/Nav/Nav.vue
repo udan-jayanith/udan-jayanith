@@ -6,7 +6,7 @@
 		<a class="nav-item" href="#experience">Expirence</a>
 		<!--	<a class="nav-item" href="#">Education</a>-->
 
-		<a class="nav-item contact" href="#contact">Contact</a>
+		<a class="nav-item contact" href="#footer">Contact</a>
 	</nav>
 </template>
 

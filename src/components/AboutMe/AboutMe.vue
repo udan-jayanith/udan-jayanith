@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onBeforeMount } from "vue";
+import Social from "./Social/Social.vue";
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -30,16 +31,7 @@ onBeforeMount(async () => {
 		<div class="about-me">
 			<h1>Hey {{ profileData ? profileData.name : "" }} here.</h1>
 			<p>{{ profileData ? profileData.bio : "" }}</p>
-			<div class="social" id="contact">
-				<div class="media">
-					<a :href="profileData ? profileData.html_url : '#'" title="Github"
-						><FontAwesomeIcon :icon="faGithub"
-					/></a>
-				</div>
-				<div class="media">
-					<a href="https://stackoverflow.com/users/23336104/udan-jayanith" title="Stackoverflow"><FontAwesomeIcon :icon="faStackOverflow" /></a>
-				</div>
-			</div>
+			<Social></Social>
 		</div>
 		<img
 			:src="profileData ? profileData.avatar_url : '#'"
@@ -80,24 +72,6 @@ onBeforeMount(async () => {
 
 		p {
 			padding-left: 4px;
-		}
-
-		.social {
-			display: flex;
-			flex-direction: row;
-			justify-content: left;
-			align-content: center;
-			gap: 10px;
-			margin-top: auto;
-			.media {
-				a {
-					color: var(--black);
-					font-size: 1.4rem;
-					&:hover {
-						color: black;
-					}
-				}
-			}
 		}
 	}
 

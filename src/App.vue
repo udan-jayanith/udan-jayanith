@@ -5,6 +5,7 @@ import AboutMe from './components/AboutMe/AboutMe.vue';
 import Nav from './components/Nav/Nav.vue';
 import ProjectSelection from './components/ProjectsSection/ProjectSelection.vue';
 import ExperienceSection from './components/ExperienceSection/ExperienceSection.vue';
+import Social from './components/AboutMe/Social/Social.vue';
 
 let scrollY = 0
 let spriteEl = ref(null)
@@ -37,6 +38,11 @@ onMounted(() => {
 		<ProjectSelection></ProjectSelection>
 		<h2 id="experience">Experience</h2>
 		<ExperienceSection></ExperienceSection>
+		<footer id="footer">
+			<span>&copy; 2025 udan-jayanith</span>
+			<a href="https://github.com/udan-jayanith/udan-jayanith">Source code</a>
+			<Social class="contacts-footer"></Social>
+		</footer>
 	</main>
 </template>
 
@@ -51,7 +57,7 @@ onMounted(() => {
 	min-height: 100vh;
 	max-width: 100%;
 	box-sizing: border-box;
-	
+
 	.nav{
 		margin-top: 2rem;
 	}
@@ -71,6 +77,20 @@ onMounted(() => {
 	}
 	.sprite{
 		display: none;
+	}
+}
+
+footer{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+	
+	margin-top: 2rem;
+	padding: 2px;
+	
+	.contacts-footer{
+		margin-left: auto;
 	}
 }
 </style>
