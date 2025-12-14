@@ -6,14 +6,14 @@ async function getPinedRepos() {
 	return data.value;
 }
 
-let pinedRepos = useState("pinedRepos", () => null);
+let pinedRepos = useState("pinedRepos", () => [{}]);
 getPinedRepos().then((json)=>{
 	pinedRepos.value = json
 })
 </script>
 
 <template>
-	<div class="project-selection-body" v-if="pinedRepos != null">
+	<div class="project-selection-body">
 		<RepoBox v-for="repo in pinedRepos" :repo="repo"></RepoBox>
 	</div>
 </template>
