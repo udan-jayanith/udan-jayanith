@@ -1,6 +1,6 @@
 <script setup>
 import Footer from "./components/Footer/Footer.vue";
-import { onMounted, ref } from "vue";
+import { onMounted } from "vue";
 
 useHead({
 	meta: [

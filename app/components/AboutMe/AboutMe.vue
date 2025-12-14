@@ -1,5 +1,4 @@
 <script setup>
-import { ref, onBeforeMount } from "vue";
 import Social from "./Social/Social.vue";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -13,16 +12,15 @@ library.add(faStackOverflow);
 //https://api.github.com/users/udan-jayanith
 
 async function fetchProfileData() {
-	let res = await fetch(`https://api.github.com/users/udan-jayanith`);
-	let json = await res.json();
-	return json;
+	let res = await $fetch(`https://api.github.com/users/udan-jayanith`);
+	return res;
 }
 
-let profileData = ref(null);
+let profileData = useState('profileData', ()=>null);
+fetchProfileData().then(json=>{
+	profileData.value = json
+})
 
-onBeforeMount(async () => {
-	profileData.value = await fetchProfileData();
-});
 </script>
 
 <template>

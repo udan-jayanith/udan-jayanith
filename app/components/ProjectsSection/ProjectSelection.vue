@@ -1,18 +1,14 @@
 <script setup>
 import RepoBox from "./RepoBox/RepoBox.vue";
-import { onBeforeMount, ref } from "vue";
 
-async function getPinedRepos(){
-	let res = await fetch(`https://pinned.berrysauce.dev/get/udan-jayanith`)
-	let json = await res.json()
-	return json
+async function getPinedRepos() {
+	let res = await $fetch(`https://pinned.berrysauce.dev/get/udan-jayanith`);
+	return res;
 }
 
-
-let pinedRepos = ref(null)
-	
-onBeforeMount(async()=>{
-	pinedRepos.value = await getPinedRepos()
+let pinedRepos = useState("pinedRepos", () => null);
+getPinedRepos().then((json)=>{
+	pinedRepos.value = json
 })
 </script>
 
