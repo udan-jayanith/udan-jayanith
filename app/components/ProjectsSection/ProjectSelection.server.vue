@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted } from "vue";
+import { onBeforeMount } from "vue";
 import RepoBox from "./RepoBox/RepoBox.server.vue";
 
 async function getPinedRepos() {
@@ -9,7 +9,7 @@ async function getPinedRepos() {
 
 let pinedRepos = useState("pinedRepos", () => [{}]);
 
-onMounted(() => {
+onBeforeMount(() => {
 	getPinedRepos().then((json) => {
 		pinedRepos.value = json;
 	});
