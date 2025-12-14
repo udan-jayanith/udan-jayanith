@@ -1,5 +1,5 @@
 <script setup>
-import RepoBox from "./RepoBox/RepoBox.vue";
+import RepoBox from "./RepoBox/RepoBox.server.vue";
 
 async function getPinedRepos() {
 	let res = await $fetch(`https://pinned.berrysauce.dev/get/udan-jayanith`);

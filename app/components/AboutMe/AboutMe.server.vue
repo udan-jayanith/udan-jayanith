@@ -1,5 +1,5 @@
 <script setup>
-import Social from "./Social/Social.vue";
+import Social from "./Social/Social.server.vue";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
