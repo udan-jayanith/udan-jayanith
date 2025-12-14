@@ -5,7 +5,7 @@ export default defineNuxtConfig({
 	ssr: true,
 
 	experimental: {
-		componentIslands: true,
+		componentIslands: false,
 	},
 
 	app: {
