@@ -9,7 +9,6 @@ async function getPinedRepos() {
 let pinedRepos = useState("pinedRepos", () => null);
 getPinedRepos().then((json)=>{
 	pinedRepos.value = json
-	console.log(json)
 })
 </script>
 
