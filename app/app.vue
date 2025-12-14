@@ -1,5 +1,5 @@
 <script setup>
-import Footer from "./components/Footer/Footer.server.vue";
+import Footer from "./components/Footer/Footer.vue";
 import { onMounted } from "vue";
 
 useHead({

@@ -1,5 +1,5 @@
 <script setup lang="js">
-import Social from '../AboutMe/Social/Social.server.vue';
+import Social from '../AboutMe/Social/Social.vue';
 </script setup>
 
 <template>
