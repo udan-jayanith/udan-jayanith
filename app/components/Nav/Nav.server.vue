@@ -38,9 +38,10 @@
 
 		padding: 4px 8px;
 		color: var(--black);
-		&:hover {
-			background-color: #f1e8cb;
-		}
+	}
+
+	.nav-item:hover {
+		background-color: #f1e8cb;
 	}
 
 	/*

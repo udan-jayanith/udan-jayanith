@@ -34,9 +34,9 @@ library.add(faStackOverflow);
 		a {
 			color: var(--black);
 			font-size: 1.4rem;
-			&:hover {
-				color: black;
-			}
+		}
+		a:hover {
+			color: black;
 		}
 	}
 }

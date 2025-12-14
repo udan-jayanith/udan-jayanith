@@ -48,10 +48,6 @@ let props = defineProps({
 	align-items: flex-start;
 	gap: 10px;
 
-	&:hover {
-		box-shadow: var(--box-shadow);
-	}
-
 	h5,
 	p {
 		margin: 0px;
@@ -89,12 +85,16 @@ let props = defineProps({
 
 			.start-icon {
 				color: #ffd355;
-				&hover {
-					text-shadow: var(--box-shadow);
-					box-shadow: var(--box-shadow);
-				}
+			}
+			.start-icon :hover {
+				text-shadow: var(--box-shadow);
+				box-shadow: var(--box-shadow);
 			}
 		}
+	}
+
+	.repo-box:hover {
+		box-shadow: var(--box-shadow);
 	}
 
 	.description {
