@@ -1,8 +1,8 @@
 <script setup>
-import AboutMe from '~/components/AboutMe/AboutMe.vue';
-import Nav from '~/components/Nav/Nav.vue';
-import ProjectSelection from '~/components/ProjectsSection/ProjectSelection.vue';
-import ExperienceSection from '~/components/ExperienceSection/ExperienceSection.vue';
+import AboutMe from '~/components/AboutMe/AboutMe.server.vue';
+import Nav from '~/components/Nav/Nav.server.vue';
+import ProjectSelection from '~/components/ProjectsSection/ProjectSelection.server.vue';
+import ExperienceSection from '~/components/ExperienceSection/ExperienceSection.server.vue';
 </script>
 
 <template>
