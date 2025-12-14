@@ -3,9 +3,11 @@ export default defineNuxtConfig({
 	compatibilityDate: "2025-07-15",
 	devtools: { enabled: false },
 	ssr: true,
+
 	experimental: {
 		componentIslands: true,
 	},
+
 	app: {
 		head: {
 			title: "Udan Jayanith",
@@ -35,8 +37,11 @@ export default defineNuxtConfig({
 			],
 		},
 	},
+
 	css: [
 		// CSS file in the project
 		"./app/assest/styles.css",
 	],
+
+	modules: ["@nuxt/image"],
 });

@@ -3,15 +3,14 @@ import Footer from "./components/Footer/Footer.server.vue";
 import { onMounted } from "vue";
 
 let scrollY = 0;
-let spriteEl = useState("spriteEl", () => null);
+
+let spritePos = useState("spritePos", () => {
+	return { left: 0, top: 0 };
+});
 
 function updateSpritePos({ x, y }) {
-	if (spriteEl.value == null) {
-		console.log(spriteEl);
-		return;
-	}
-	spriteEl.value.style.left = x + 10 + "px";
-	spriteEl.value.style.top = y + scrollY - 16 + "px";
+	spritePos.value.left = x + 10 + "px";
+	spritePos.value.top = y + scrollY - 16 + "px";
 }
 
 function onMountedClient() {
@@ -32,7 +31,12 @@ onMounted(() => {
 </script>
 
 <template>
-	<img src="./assest/dancing-gopher.gif" class="sprite" ref="spriteEl" alt="dancing Gopher sprite" />
+	<NuxtImg
+		src="/dancing-gopher.gif"
+		class="sprite"
+		alt="dancing Gopher sprite"
+		:style="spritePos"
+	/>
 	<main class="main-body">
 		<NuxtPage></NuxtPage>
 		<Footer></Footer>

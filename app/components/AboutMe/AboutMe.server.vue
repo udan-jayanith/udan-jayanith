@@ -12,7 +12,7 @@ library.add(faStackOverflow);
 //https://api.github.com/users/udan-jayanith
 
 async function fetchProfileData() {
-	let { data } = await useFetch("https://api.github.com/users/udan-jayanith")
+	let { data } = await useFetch("https://api.github.com/users/udan-jayanith");
 	return data.value;
 }
 
@@ -29,7 +29,7 @@ fetchProfileData().then((json) => {
 			<p>{{ profileData ? profileData.bio : "" }}</p>
 			<Social></Social>
 		</div>
-		<img
+		<NuxtImg
 			:src="profileData ? profileData.avatar_url : '#'"
 			alt="profile picture"
 			class="profile-picture"
