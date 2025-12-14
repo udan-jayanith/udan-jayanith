@@ -2,30 +2,6 @@
 import Footer from "./components/Footer/Footer.server.vue";
 import { onMounted } from "vue";
 
-useHead({
-	meta: [
-		{
-			name: "description",
-			content:
-				"Udan is someone who enjoys building application software and diving into ideas that genuinely interest him. He likes experimenting, learning along the way, and turning concepts into practical, meaningful creations",
-		},
-
-		{
-			name: "keywords",
-			content: "udan-jayanith, Udan, Udan Jayanith, udan jayanith",
-		},
-		{ name: "author", content: "Udan Jayanith" },
-	],
-	link: [
-		{ rel: "preconnect", href: "https://fonts.googleapis.com" },
-		{ rel: "preconnect", href: "https://fonts.gstatic.com" },
-		{
-			rel: "stylesheet",
-			href: "https://fonts.googleapis.com/css2?family=Balthazar&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap",
-		},
-	],
-});
-
 let scrollY = 0;
 let spriteEl = useState("spriteEl", () => null);
 

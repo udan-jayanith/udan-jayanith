@@ -2,8 +2,8 @@
 import RepoBox from "./RepoBox/RepoBox.server.vue";
 
 async function getPinedRepos() {
-	let res = await $fetch(`https://pinned.berrysauce.dev/get/udan-jayanith`);
-	return res;
+	let {data} = await useFetch(`https://pinned.berrysauce.dev/get/udan-jayanith`);
+	return data.value;
 }
 
 let pinedRepos = useState("pinedRepos", () => null);

@@ -12,15 +12,14 @@ library.add(faStackOverflow);
 //https://api.github.com/users/udan-jayanith
 
 async function fetchProfileData() {
-	let res = await $fetch(`https://api.github.com/users/udan-jayanith`);
-	return res;
+	let { data } = await useFetch("https://api.github.com/users/udan-jayanith")
+	return data.value;
 }
 
-let profileData = useState('profileData', ()=>null);
-fetchProfileData().then(json=>{
-	profileData.value = json
-})
-
+let profileData = useState("profileData", () => null);
+fetchProfileData().then((json) => {
+	profileData.value = json;
+});
 </script>
 
 <template>
@@ -58,7 +57,7 @@ fetchProfileData().then(json=>{
 		align-items: flex-start;
 		justify-content: flex-start;
 		gap: 10px;
-		
+
 		height: 100%;
 		text-wrap-style: pretty;
 		p,
