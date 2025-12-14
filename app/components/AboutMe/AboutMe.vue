@@ -2,7 +2,6 @@
 import { ref, onBeforeMount } from "vue";
 import Social from "./Social/Social.vue";
 
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
