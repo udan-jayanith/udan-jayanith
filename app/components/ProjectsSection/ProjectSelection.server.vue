@@ -1,14 +1,18 @@
 <script setup>
+import { onMounted } from "vue";
 import RepoBox from "./RepoBox/RepoBox.server.vue";
 
 async function getPinedRepos() {
-	let { data } = await useFetch(`https://pinned.berrysauce.dev/get/udan-jayanith`);
+	let { data } = await useFetch(`https://pinned.berrysauce.dev/get/udan-jayanith`, { server: false });
 	return data.value;
 }
 
 let pinedRepos = useState("pinedRepos", () => [{}]);
-getPinedRepos().then((json) => {
-	pinedRepos.value = json;
+
+onMounted(() => {
+	getPinedRepos().then((json) => {
+		pinedRepos.value = json;
+	});
 });
 </script>
 

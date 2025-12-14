@@ -1,8 +1,8 @@
 <script setup>
-import AboutMe from '~/components/AboutMe/AboutMe.server.vue';
-import Nav from '~/components/Nav/Nav.server.vue';
-import ProjectSelection from '~/components/ProjectsSection/ProjectSelection.server.vue';
-import ExperienceSection from '~/components/ExperienceSection/ExperienceSection.server.vue';
+import AboutMe from "~/components/AboutMe/AboutMe.server.vue";
+import Nav from "~/components/Nav/Nav.server.vue";
+import ProjectSelection from "~/components/ProjectsSection/ProjectSelection.server.vue";
+import ExperienceSection from "~/components/ExperienceSection/ExperienceSection.server.vue";
 </script>
 
 <template>
@@ -10,12 +10,13 @@ import ExperienceSection from '~/components/ExperienceSection/ExperienceSection.
 		<AboutMe></AboutMe>
 		<Nav class="nav"></Nav>
 		<h2 id="projects">Projects</h2>
-		<ProjectSelection></ProjectSelection>
+		<ClientOnly>
+			<ProjectSelection></ProjectSelection>
+		</ClientOnly>
 		<h2 id="experience">Experience</h2>
 		<ExperienceSection></ExperienceSection>
 	</article>
 </template>
-
 
 <style scoped>
 .main-article {
@@ -24,7 +25,7 @@ import ExperienceSection from '~/components/ExperienceSection/ExperienceSection.
 	max-width: 100%;
 	box-sizing: border-box;
 
-	.nav{
+	.nav {
 		margin-top: 2rem;
 	}
 }
