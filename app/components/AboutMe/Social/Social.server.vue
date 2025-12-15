@@ -12,10 +12,15 @@ library.add(faStackOverflow);
 <template>
 	<div class="social" id="contact">
 		<div class="media">
-			<a href="https://github.com/udan-jayanith" title="Github"><FontAwesomeIcon :icon="faGithub" /></a>
+			<a href="https://github.com/udan-jayanith" title="Github" target="_blank"
+				><FontAwesomeIcon :icon="faGithub"
+			/></a>
 		</div>
 		<div class="media">
-			<a href="https://stackoverflow.com/users/23336104/udan-jayanith" title="Stackoverflow"
+			<a
+				href="https://stackoverflow.com/users/23336104/udan-jayanith"
+				title="Stackoverflow"
+				target="_blank"
 				><FontAwesomeIcon :icon="faStackOverflow"
 			/></a>
 		</div>

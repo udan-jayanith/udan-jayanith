@@ -4,9 +4,9 @@
 	<ul>
 		<li>
 			I have implemented various newtwork protocols from scratch including
-			<a href="https://github.com/udan-jayanith/HTTP-V1.1">HTTP</a>,
-			<a href="https://github.com/udan-jayanith/HLS">HTTP Live streaming</a> and
-			<a href="https://github.com/udan-jayanith/Quick">Quic</a>.
+			<a href="https://github.com/udan-jayanith/HTTP-V1.1" target="_blank">HTTP</a>,
+			<a href="https://github.com/udan-jayanith/HLS" target="_blank">HTTP Live streaming</a> and
+			<a href="https://github.com/udan-jayanith/Quick" target="_blank">Quic</a>.
 		</li>
 		<li>Preficent in Go and Javascript and worked with Vue (For this site and other web apps).</li>
 		<li>

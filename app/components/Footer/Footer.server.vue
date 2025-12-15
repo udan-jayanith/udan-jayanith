@@ -5,7 +5,7 @@ import Social from '../AboutMe/Social/Social.server.vue';
 <template>
 	<footer id="footer">
 		<span>&copy; 2025 udan-jayanith</span>
-		<a href="https://github.com/udan-jayanith/udan-jayanith">Source code</a>
+		<a href="https://github.com/udan-jayanith/udan-jayanith" target="_blank">Source code</a>
 		<Social class="contacts-footer"></Social>
 	</footer>
 </template>

@@ -13,7 +13,7 @@ let props = defineProps({
 <template>
 	<div class="repo-box">
 		<div class="header">
-			<a :href="`https://github.com/udan-jayanith/${props.repo.name}`">{{
+			<a :href="`https://github.com/udan-jayanith/${props.repo.name}`" target="_blank">{{
 				props.repo.name ? props.repo.name : ""
 			}}</a>
 			<div class="star-count-container">
