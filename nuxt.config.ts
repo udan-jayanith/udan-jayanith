@@ -7,7 +7,6 @@ export default defineNuxtConfig({
 	experimental: {
 		componentIslands: false,
 	},
-
 	app: {
 		head: {
 			title: "Udan Jayanith",
@@ -26,6 +25,10 @@ export default defineNuxtConfig({
 					content: "udan-jayanith, Udan, Udan Jayanith, udan jayanith",
 				},
 				{ name: "author", content: "Udan Jayanith" },
+				{
+					name: "google-site-verification",
+					content: "H38MTeEzj4NwDjK77K6_F1_JwYjmysZOuB1vx_If0H8",
+				},
 			],
 			link: [
 				{ rel: "preconnect", href: "https://fonts.googleapis.com" },
