@@ -29,6 +29,7 @@ onBeforeMount(() => {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 10px;
+	min-height: 200px;
 }
 
 @media (orientation: portrait) {

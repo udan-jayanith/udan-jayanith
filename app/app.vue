@@ -31,12 +31,7 @@ onMounted(() => {
 </script>
 
 <template>
-	<NuxtImg
-		src="/dancing-gopher.gif"
-		class="sprite"
-		alt="dancing Gopher sprite"
-		:style="spritePos"
-	/>
+	<NuxtImg src="/dancing-gopher.gif" class="sprite" alt="dancing Gopher sprite" :style="spritePos" />
 	<main class="main-body">
 		<NuxtPage></NuxtPage>
 		<Footer></Footer>
@@ -63,9 +58,21 @@ onMounted(() => {
 	top: 0px;
 }
 
-@media (orientation: portrait) {
+@media only screen and (max-width: 1080px) {
 	.main-body {
 		padding: 1rem 2rem;
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.main-body {
+		width: 80%;
+	}
+}
+
+@media (orientation: portrait) {
+	.main-body {
 		width: auto;
 	}
 	.sprite {

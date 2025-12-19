@@ -27,7 +27,12 @@ fetchProfileData().then((json) => {
 		<div class="about-me">
 			<h1>Hey {{ profileData ? profileData.name : "" }} here.</h1>
 			<p>{{ profileData ? profileData.bio : "" }}</p>
-			<Social></Social>
+			<div class="my-data">
+				<div class="language">
+					<span>Go</span><span>Javascript</span><span>Vue/Nuxt</span><span>Rust</span>
+				</div>
+				<Social class="social"></Social>
+			</div>
 		</div>
 		<NuxtImg
 			:src="profileData ? profileData.avatar_url : '#'"
@@ -68,6 +73,27 @@ fetchProfileData().then((json) => {
 
 		p {
 			padding-left: 4px;
+			overflow-y: scroll;
+		}
+		
+		.my-data{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			gap: 10px;
+			width: 100%;
+			
+			margin-top: auto;
+			.language{
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				gap: 10px;
+			}
+			
+			.social{
+				margin-left: auto;
+			}
 		}
 	}
 
