@@ -42,6 +42,15 @@ h6 {
 	font-variation-settings: "wdth" 100;
 }
 
+/*
+Do not remove this.
+For more https://developer.mozilla.org/en-US/blog/h1-element-styles/.
+*/
+h1 {
+	margin-block: 0.67em;
+	font-size: 2em;
+}
+
 hr {
 	border: none; /* Removes default border/shading */
 	height: 2px; /* Sets the thickness of the line */
