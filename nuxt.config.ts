@@ -17,7 +17,7 @@ export default defineNuxtConfig({
 				{
 					name: "description",
 					content:
-						"Udan is someone who enjoys building application software and diving into ideas that genuinely interest him. He likes experimenting, learning along the way, and turning concepts into practical, meaningful creations",
+						"I enjoy working on ideas that interest me and i'm looking toward into backend engineering and systems programming.",
 				},
 
 				{
