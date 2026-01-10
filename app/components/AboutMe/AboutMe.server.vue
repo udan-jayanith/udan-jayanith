@@ -25,7 +25,7 @@ fetchProfileData().then((json) => {
 <template>
 	<div class="about-me-container">
 		<div class="about-me">
-			<h1>Hey {{ profileData ? profileData.name : "" }} here.</h1>
+			<h1>Udan Jayanith</h1>
 			<p>{{ profileData ? profileData.bio : "" }}</p>
 			<div class="my-data">
 				<div class="language">
